@@ -1,0 +1,427 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.wrapper //обёрточный блок
+	width: 100%
+	height: 100%
+	padding: 0 306px
+	
+
+/* Стили header конец */	
+.header
+	height: 109px
+
+.header__inner
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 100%
+
+.header__city
+	display: flex
+	font-size: 14px
+	text-transform: uppercase
+	height: 30px
+	align-items: center
+	position: relative
+
+.header__yourCity
+	margin: 0 10px 0 0
+
+.header__citySelect
+	border: none
+	position: relative
+	color: #898989
+	font-weight: bold
+	display: block
+	option
+		color: #898989
+
+.select-modified
+	position: absolute
+	width: 20px
+	height: 22px
+	background-color: #fff
+	z-index: 20
+	right: 0
+	&:before, &:after
+		content: ''
+		display: block
+		width: 1px
+		height: 6px
+		background-color: $text
+		position: relative
+		transform: rotate(-45deg)
+		top: 8px
+		left: 10px
+	&:after
+		transform: rotate(45deg)
+		top: 2px
+		left: 14px
+.header__logo
+	font-family: 'Phenomena-Bold'
+	font-size: 44px
+	color: rgb(128, 195, 64)	
+	font-weight: bold
+	font-style: italic
+	margin: 0
+	position: relative
+	top: -7px
+
+.header__phone
+	font-size: 34px	
+	strong
+		font-weight: 400
+/* Стили header конец */
+
+/* Стили верхнего промо блока начало */
+.promoTop
+	width: 100%
+	height: 539px 
+	color: #fff
+	text-align: center	
+	background: url('../img/9.png') no-repeat 25% 100%,
+	url('../img/3.png') no-repeat 51% 95%,
+	url('../img/8.png') no-repeat 80% 85%,
+	#80c340
+
+.promoTop__inner
+	padding-top: 30px
+	height: 100%
+	
+.promoTop__title	
+	text-transform: uppercase
+	font-weight: 400
+	font-size: 40px
+	margin-bottom: 5px
+	line-height: 1.2
+
+.promoTop__subTitle
+	text-transform: uppercase
+	margin-bottom: 23px
+	text-align: center
+	
+.promoTop__formOrder
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.formOrder__phone
+	display: block
+	border: 2px solid #fff
+	border-radius: 5px
+	background-color: #fff	
+	width: 440px
+	padding: 8px 0
+	text-align: center
+	color: $text
+	margin-bottom: 18px
+	&::placeholder
+		text-transform: uppercase
+
+.formOrder__submit
+	color: #fff
+	display: block
+	border: 2px solid #fff
+	border-radius: 5px
+	background-color: transparent
+	width: 440px
+	padding: 8px 0
+	text-align: center
+	text-transform: uppercase
+	font-size: 21px
+/* Стили верхнего промо блока конец */
+
+/* Стили секции Преимущества начало */
+.advantages__inner
+	display: flex
+
+.advantages__block
+
+	padding: 30px 0
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: #f6f6f6
+	border-right: 1px solid rgb(211, 211, 211)
+	flex: 1
+	&:last-child
+		border-right: none
+
+.advantages__text
+	font-size: 22px
+	line-height: 1.2
+	margin-left: 30px
+	text-transform: uppercase
+/* Стили секции Преимущества конец */
+
+/* Стили секции Ремонт начало */
+.repair__inner
+	text-align: center
+	padding-top: 100px
+
+.repair__content
+	display: flex
+
+.repair__title
+	font-size: 38px
+	font-weight: 400
+	margin-bottom: 32px
+
+.repair__block
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 35px 0 50px
+	flex: 1
+	&_bgGrey		
+		background-color: #fbfbfb
+		border: 1px solid rgb(211, 211, 211)
+
+.rp-block__title
+	font-size: 26px
+	margin-bottom: 70px
+/* Стили секции Ремонт конец */
+
+/* Стили секции Сервис начало */
+.service__inner	
+	padding-top: 100px
+	text-align: center
+
+.service__title
+	font-weight: 400
+	font-size: 38px
+	text-align: center
+
+.service__subtitle
+	font-weight: 400
+	font-size: 34px
+	display: inline
+	border-top: 1px solid rgb(211, 211, 211)
+
+.service__text		
+	font-family: 'MyriadPro'
+	text-align: justify
+	&:nth-child(3)
+		margin-top: 25px	
+/* Стили секции Сервис конец */
+
+/* Стили секции Схема работы начало */	
+.work__inner
+	background: url('../img/7.png') no-repeat center
+	
+.work__title
+	font-weight: 400
+	font-size: 38px
+	text-align: center
+
+.work__content
+	display: flex
+
+.wr-block
+	height: 367px
+	flex: 1
+	display: flex	
+	&:nth-child(even)
+		flex-direction: column-reverse
+	&:nth-child(2)
+		padding-bottom: 65px	
+	&:nth-child(odd)	
+		background: url('../img/shadow.png') no-repeat center 100% /contain
+
+.wr-block__number
+	font-family: 'BebasNeueBook'
+	font-size: 32px
+	line-height: 32px
+	margin-right: 20px
+
+.wr-block__description
+	font-size: 13px
+
+.wr-block__title
+	margin: 0
+
+.wr-block__text
+	a
+		text-decoration: underline
+/* Стили секции Схема работы конец */								
+
+/* Стили секции Внимание начало */
+.attention
+	display: flex
+	padding: 39px 0 98px
+
+.attention__block
+	margin: 0 auto
+	width: 588px
+	padding: 27px 42px
+	border-radius: 5px
+	background: url('../img/31.png') no-repeat right bottom,
+	#80c340
+	color: #fff
+
+.attention__title	
+	margin-bottom: 0
+/* Стили секции Внимание конец */
+
+/* Стили секции Отзывы Начало */
+.reviews__inner
+	padding: 0 50px 135px
+	position: relative
+
+.reviews__title
+	font-weight: 400
+	font-size: 38px
+	text-align: center
+	margin-bottom: 89px	
+
+.reviews__img
+	border: 2px solid rgb(195, 195, 195)
+	border-radius: 5px
+	position: relative
+	&:hover
+		border-color: #80c340
+
+.customPrevBtn
+	cursor: pointer
+	&:before, &:after
+		position: absolute
+		content: ''
+		display: block
+		width: 4px
+		height: 16px
+		background-color: rgb(195, 195, 195)
+		top: 210px
+		left: 0	
+		transform: rotate(45deg)
+	&:after
+		top: 219px
+		transform: rotate(135deg)	
+	&:hover:before,&:hover:after
+		background-color: #80c340
+
+.customNextBtn
+	cursor: pointer
+	&:before, &:after
+		position: absolute
+		content: ''
+		display: block
+		width: 4px
+		height: 16px
+		background-color: rgb(195, 195, 195)
+		top: 210px
+		right: 0	
+		transform: rotate(135deg)
+	&:after
+		top: 219px
+		transform: rotate(45deg)	
+	&:hover:before,&:hover:after
+		background-color: #80c340
+
+.reviews__details
+	cursor: pointer
+	position: absolute
+	z-index: 20
+	bottom: 0
+	right: 0
+	display: none!important
+	transform: scale(0.3) translate(-165px, 165px)
+	
+/* Стили секции Отзывы конец */
+
+/* Стили секции Вопросы начало */
+.questions
+	background-color: #80c340	
+
+.questions__inner
+	display: flex	
+	color: #fff
+	padding: 67px 0 67px 324px
+	position: relative
+
+.questions__hand
+	position: absolute
+	left: 0
+	bottom: 0
+/* Стили секции Вопросы конец */
+
+/* Стили секции Footer начало */
+.footer
+	background-color: #585858	
+	p
+		margin: 0
+
+.footer__inner
+	padding: 23px 8px
+	display: flex
+	justify-content: space-between
+	color: #ffffff
+
+.footer__logo
+	color: #ffffff
+		
+.footer__repair
+	font-size: 11px
+	margin-bottom: 14px
+
+.footer__right
+	display: flex
+	align-items: center
+
+.footer__contacts
+	text-align: right	
+	margin-right: 35px
+	font-size: 15px
+
+.footer__phone
+	font-size: 30px
+/* Стили секции Footer конец */
+
+/* Стили Блока информации начало */
+.information
+	background-color: #313131
+	font-size: 11px
+	text-align: center
+	padding: 5px 0
+/* Стили Блока информации конец */	
+.dBlock
+	display: block!important
+
+@import "media" // Always at the end

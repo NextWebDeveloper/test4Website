@@ -1,0 +1,190 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+@media only screen and (max-width:1400px)
+	.wrapper
+		padding: 0 200px		
+
+@media only screen and (max-width:1200px)
+	.wrapper
+		padding: 0 100px			
+
+	.promoTop
+		background: url('../img/9.png') no-repeat 15% 100%,
+		url('../img/3.png') no-repeat 51% 95%,
+		url('../img/8.png') no-repeat 90% 85%,
+		#80c340
+
+	.advantages__text
+		font-size: 18px		
+
+	.service__subtitle
+		font-size: 28px
+
+@media only screen and (max-width:1100px)
+	.reviews__details	
+		display: none!important
+
+	.reviews__img
+		cursor: pointer	
+
+@media only screen and (max-width:992px)
+	.wrapper
+		padding: 0 15px		
+
+	.promoTop
+		background: url('../img/9.png') no-repeat 4% 100%,
+		url('../img/3.png') no-repeat 46% 95%,
+		url('../img/8.png') no-repeat 100% 85%,
+		#80c340
+
+	.questions__inner
+		padding-left: 280px		
+
+@media only screen and (max-width:768px)
+	.header__yourCity
+		display: none
+
+	.header__phone
+		font-size: 25px
+
+	.promoTop
+		background: #80c340
+
+	.promoTop
+		height: auto	
+
+	.promoTop__inner
+		padding-bottom: 30px	
+
+	.promoTop__title
+		font-size: 25px	
+
+	.advantages__inner
+		flex-direction: column
+
+	.advantages__block	
+		border: none
+
+	.repair__inner
+		padding: 30px 0
+
+	.repair__title
+		font-size: 25px
+		margin-bottom: 0
+
+	.repair__content
+		flex-direction: column
+
+	.rp-block
+		padding: 10px 0
+
+	.rp-block__title
+		margin-bottom: 20px
+
+	.service__inner
+		padding: 30px 0
+
+	.service__title
+		font-size: 25px
+
+	.service__subtitle
+		font-size: 20px
+
+	.work__inner
+		background: none
+
+	.work__title
+		font-size: 25px	
+
+	.work__content
+		flex-direction: column	
+
+	.wr-block
+		&:nth-child(even)
+			flex-direction: row
+		&:nth-child(2)
+			padding-bottom: 0	
+		&:nth-child(odd)
+			background: none	
+
+	.attention
+		padding: 30px 0
+
+	.reviews__title
+		font-size: 25px	
+		margin-bottom: 30px	
+
+	.reviews__inner
+		padding-bottom: 30px	
+
+	.questions__inner
+		padding-left: 0px	
+
+	.questions__hand
+		display: none
+
+	.footer__inner
+		flex-direction: column
+		align-items: center
+
+	.footer__left
+		margin-bottom: 20px	
+
+	.footer__phone
+		font-size: 25px
+
+@media only screen and (max-width:576px)
+	.header__city
+		display: none
+
+	.header__phone
+		font-size: 20px		
+
+	.formOrder__submit, .formOrder__phone
+		font-size: 16px	
+		width: 100%
+
+	.advantages__block
+		flex-direction: column	
+
+	.footer__right
+		flex-direction: column
+
+	.footer__contacts
+		margin-right: 0
+		margin-bottom: 20px
+		text-align: center
+		
+	.footer__phone
+		font-size: 20px	
